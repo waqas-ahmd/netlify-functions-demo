@@ -4,9 +4,10 @@ const handler = async (event) => {
   try {
     //const subject = event.queryStringParameters.name || 'Worlds'
     const name = randomName.first();
+    const surname = randomName.last();
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: `Hello ${name} Welcome` }),
+      body: JSON.stringify({ message: `${name} ${surname}` }),
       // // more keys you can return:
       // headers: { "headerName": "headerValue", ... },
       // isBase64Encoded: true,
