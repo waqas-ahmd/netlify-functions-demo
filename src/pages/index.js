@@ -11,8 +11,7 @@ export default function Home() {
   }, [])
   return (
     <div>
-      Hello world!
-      <div>{data.message}</div>
+      <div>Data from Server: <em>{data.message}</em></div>
     </div>
   )
 }
